@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Supply Order App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Medical Supplies</h1>
+        <form id="orderForm">
+            <label for="item">Select Item:</label>
+            <select id="item" required>
+                <option value="">--Please choose an item--</option>
+                <option value="Blood" data-price="100">Blood ($100)</option>
+                <option value="Headache Medicine" data-price="15">Headache Medicine ($15)</option>
+                <option value="Paracetamol" data-price="10">Paracetamol ($10)</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" required>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="date" id="expirationDate" required>
+
+            <label for="hospital">Select Hospital:</label>
+            <select id="hospital" required>
+                <option value="">--Please choose a hospital--</option>
+                <option value="Muhimbili National Hospital">Muhimbili National Hospital</option>
+                <option value="Regency Medical Center">Regency Medical Center</option>
+                <option value="Ocean Road Cancer Institute">Ocean Road Cancer Institute</option>
+                <option value="Aga Khan Hospital">Aga Khan Hospital</option>
+                <option value="Saifee Hospital Tanzania">Saifee Hospital Tanzania</option>
+            </select>
+
+            <button type="submit">Order Now</button>
+        </form>
+
+        <div id="thankYou" class="hidden">
+            <h2>Your Order Summary</h2>
+            <p id="summaryText"></p>
+            <p id="totalPriceText"></p>
+          
+        </div>
+       <div class="search-link">
+        <p>For a list of hospitals in Tanzania, visit: 
+            <a href="https://www.google.com/maps/search/
+            daresalam+near+hospital/@-6.7444047,39.1494892,
+            12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                Bing Search for Hospitals
+            </a>
+        </p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
